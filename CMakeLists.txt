@@ -20,8 +20,9 @@ set(SOURCE_FILES
 )
 
 set(GUI_SOURCE_FILES
-   mainwindow.cpp
-   g_scene.cpp
+	CMainWindow.cpp
+	CGraphicsScene.cpp
+	CGraphicsView.cpp
 )
 
 find_package(Qt5Widgets REQUIRED)
@@ -32,8 +33,8 @@ FIND_PACKAGE( MRPT REQUIRED base maps slam)
 set(GUI_APP_NAME ${PROJECT_NAME})
 
 add_executable(${GUI_APP_NAME}
-    ${SOURCE_FILES}
-    ${GUI_SOURCE_FILES}
+	 ${SOURCE_FILES}
+	 ${GUI_SOURCE_FILES}
     ${UIS_HDRS}
 )
 
