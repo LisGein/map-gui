@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 3.1)
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_CXX_STANDARD 11)
+set(MRPT_DONT_USE_DBG_LIBS 1)
 
 if(COMMAND cmake_policy)
 cmake_policy(SET CMP0003 NEW) # Required by CMake 2.7+
