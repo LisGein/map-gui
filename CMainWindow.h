@@ -1,5 +1,6 @@
 #pragma once
 #include <QMainWindow>
+#include "CContreller.h"
 
 
 class CGraphicsScene;
@@ -17,5 +18,7 @@ private slots:
 private:
 	void initMenu();
 
-	CGraphicsScene* m_scene_;
+    CGLWidget *m_gl;
+    CGraphicsScene *m_scene;
+    CController m_controller;
 };

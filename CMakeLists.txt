@@ -22,8 +22,10 @@ set(SOURCE_FILES
 
 set(GUI_SOURCE_FILES
 	CMainWindow.cpp
-	CGraphicsScene.cpp
-	CGraphicsView.cpp
+        CGraphicsScene.cpp
+        CGraphicsView.cpp
+        CGlWidget.cpp
+        CContreller.cpp
 )
 
 find_package(Qt5Widgets REQUIRED)
